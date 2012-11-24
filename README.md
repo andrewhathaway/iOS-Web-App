@@ -1,6 +1,6 @@
 #iOS Web App's
 
-There are a lot of things you have to setup to cover all Apple devices when creating a Web App. I will keep track of them here.
+There are a lot of things you have to setup to cover all Apple devices when creating an iOS friendly Web App. I will keep track of them here.
 
 ##App Titles and viewports
 Here we need to setup a few things for your appication. The App Viewport (The one below is iPhone 5 friendly - People have had issues with other viewport tags.), Status bar styles, Telephone number format detection, fullscreen your app (removes Safari UI elements) & finally the App title, if this is not set it fallbacks to your title tag.
@@ -74,4 +74,4 @@ A few splash screen sizes are required, and also their portrait and landscape ve
     <link rel="apple-touch-startup-image" sizes="1536x2008" href="/path" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 2)">
     
 ##Footnote
-If you're reading this, I hope I have helped and if you have any questions you can find me on [Twitter](http://twitter.com/andrewhathaway).
+If you're reading this, I hope I have helped and if you have any questions you can find me on [Twitter](http://twitter.com/andrewhathaway). Thanks.
