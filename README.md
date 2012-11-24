@@ -27,25 +27,21 @@ Sigh. Theres a lot of different sizes needed to fit certain sized devices and th
 
     <!-- iPhone 3GS & 2011 iPod Touch (57x57) -->
     <link rel="apple-touch-icon" href="/path">
-    
     <link rel="apple-touch-icon-precomposed" href="/path">
     
     
     <!-- iPhone iPad, iPad 2 & iPad mini (72x72) -->
     <link rel="apple-touch-icon" sizes="72x72" href="/path">
-    
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/path">
     
     
     <!-- iPhone 4, 4S, 5 & 2012 iPod Touch (114x114) -->
     <link rel="apple-touch-icon" sizes="114x114" href="/path">
-    
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/path">
     
     
     <!-- iPad 3 & 4 (144x144) -->
     <link rel="apple-touch-icon" sizes="144x144" href="/path">
-    
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/path">
 
 
