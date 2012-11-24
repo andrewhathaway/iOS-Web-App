@@ -74,3 +74,6 @@ A few splash screen sizes are required, and also their portrait and landscape ve
     <link rel="apple-touch-startup-image" sizes="1536x2008" href="/path" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 2)">
     
     
+
+ ##Footnote
+ If you're reading this, I hope I have helped and if you have any questions you can find me on [Twitter](http://twitter.com/andrewhathaway).
