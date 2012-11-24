@@ -1,4 +1,4 @@
-# iOS Web App's
+# Title# iOS Web App's
 
 There are a lot of things you have to setup to cover all Apple devices when creating a Web App. I will keep track of them here.
 
@@ -73,7 +73,5 @@ A few splash screen sizes are required, and also their portrait and landscape ve
     <!-- iPad Retina Portrait (1536x2008) -->
     <link rel="apple-touch-startup-image" sizes="1536x2008" href="/path" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 2)">
     
-    
-
- ##Footnote
- If you're reading this, I hope I have helped and if you have any questions you can find me on [Twitter](http://twitter.com/andrewhathaway).
+##Footnote
+If you're reading this, I hope I have helped and if you have any questions you can find me on [Twitter](http://twitter.com/andrewhathaway).
