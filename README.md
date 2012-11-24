@@ -3,7 +3,7 @@
 There are a lot of things you have to setup to cover all Apple devices when creating a Web App. I will keep track of them here.
 
 ##App Titles and viewports
-Here we need to setup a few things for your appication. The App Viewport (The one below is iPhone 5 friendly - People have had issues with other viewport tags.), Status bar styles, Telephone number format detection, fullscreen your app (removes Safari UI elements) & finally the App title, if this is not set it fallbacks to your <<title></title>> Tag.
+Here we need to setup a few things for your appication. The App Viewport (The one below is iPhone 5 friendly - People have had issues with other viewport tags.), Status bar styles, Telephone number format detection, fullscreen your app (removes Safari UI elements) & finally the App title, if this is not set it fallbacks to your title tag.
 
     <!-- Viewport (iPhone 5 friendly) -->
     <meta name="viewport" content="initial-scale=1.0">
