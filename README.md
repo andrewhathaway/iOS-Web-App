@@ -1,4 +1,4 @@
-# Title# iOS Web App's
+#iOS Web App's
 
 There are a lot of things you have to setup to cover all Apple devices when creating a Web App. I will keep track of them here.
 
