@@ -22,6 +22,11 @@ Here we need to setup a few things for your application. The App Viewport (The o
     <!-- Title -->
     <meta name="apple-mobile-web-app-title" content="App Title">
 
+    <!-- Bounces -->
+    <script type="text/javascript">
+      document.ontouchmove = function(e) {e.preventDefault()};
+    </script>
+
 ##App Icons
 Sigh. There's a lot of different sizes needed to fit certain sized devices and their retina versions. Each line also has it's precomposed version to stop iOS adding effects to the icon. The sizes for these icons are in brackets in the comments.
 
