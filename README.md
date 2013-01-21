@@ -3,7 +3,7 @@
 There are a lot of things you have to setup to cover all Apple devices when creating an iOS friendly Web App. I will keep track of them here.
 
 ##App Titles and viewports
-Here we need to setup a few things for your appication. The App Viewport (The one below is iPhone 5 friendly - People have had issues with other viewport tags.), Status bar styles, Telephone number format detection, fullscreen your app (removes Safari UI elements) & finally the App title, if this is not set it fallbacks to your title tag.
+Here we need to setup a few things for your application. The App Viewport (The one below is iPhone 5 friendly - People have had issues with other viewport tags.), Status bar styles, Telephone number format detection, fullscreen your app (removes Safari UI elements) & finally the App title, if this is not set it fallbacks to your title tag.
 
     <!-- Viewport (iPhone 5 friendly) -->
     <meta name="viewport" content="initial-scale=1.0">
@@ -22,8 +22,13 @@ Here we need to setup a few things for your appication. The App Viewport (The on
     <!-- Title -->
     <meta name="apple-mobile-web-app-title" content="App Title">
 
+    <!-- Bounces -->
+    <script type="text/javascript">
+      document.ontouchmove = function(e) {e.preventDefault()};
+    </script>
+
 ##App Icons
-Sigh. Theres a lot of different sizes needed to fit certain sized devices and their retina versions. Each line also has it's precomposed version to stop iOS adding effects to the icon. The sizes for these icons are in brackets in the comments.
+Sigh. There's a lot of different sizes needed to fit certain sized devices and their retina versions. Each line also has it's precomposed version to stop iOS adding effects to the icon. The sizes for these icons are in brackets in the comments.
 
     <!-- iPhone 3GS & 2011 iPod Touch (57x57) -->
     <link rel="apple-touch-icon" href="/path">
