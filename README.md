@@ -6,7 +6,7 @@ There are a lot of things you have to setup to cover all Apple devices when crea
 Here we need to setup a few things for your application. The App Viewport (The one below is iPhone 5 friendly - People have had issues with other viewport tags), Status bar styles, Telephone number format detection, fullscreen your app (removes Safari UI elements), the App title, if this is not set it fallbacks to your title tag and finally, preventing bouncing on scroll.
 
     <!-- Viewport (iPhone 5 friendly) -->
-    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0; user-scalable=no">
     
     <!-- Status bar styles -->
     <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
