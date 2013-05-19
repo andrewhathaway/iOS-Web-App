@@ -53,7 +53,9 @@ Sigh. There's a lot of different sizes needed to fit certain sized devices and t
 
 
 ##App Splash/Start screens
-A few splash screen sizes are required, and also their portrait and landscape versions.
+A few splash screen sizes are required, and also their portrait and landscape versions. 
+
+As said above, iPhone 5 splash screens will be ignored and 4 & 4S screens will be used if your viewport tag uses 'width-device-width'. 
 
     <!-- iPhone (320x460) -->
     <link rel="apple-touch-startup-image" media="(device-width: 320px)" href="/path">
