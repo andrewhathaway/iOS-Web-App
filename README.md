@@ -78,7 +78,7 @@ As said above, iPhone 5 splash screens will be ignored and 4 & 4S screens will b
     <!-- iPad Retina Portrait (1536x2008) -->
     <link rel="apple-touch-startup-image" sizes="1536x2008" href="/path" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 2)">
     
-##Prevent links opening in Safari
+##Preventing links from opening in Safari
 It's rather annoying that links, by default, open in Safari. This means that your apps pages suddenly jump into Safari. I found this [Gist](https://gist.github.com/irae/1042167), by [Iraê Carvalho](https://github.com/irae) that fixes this problem. Add this script into your `<head>`:
 
     <script type="text/javascript">
