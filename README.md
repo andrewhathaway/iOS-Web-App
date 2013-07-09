@@ -78,5 +78,35 @@ As said above, iPhone 5 splash screens will be ignored and 4 & 4S screens will b
     <!-- iPad Retina Portrait (1536x2008) -->
     <link rel="apple-touch-startup-image" sizes="1536x2008" href="/path" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 2)">
     
+##Prevent links opening in Safari
+It's rather annoying that links, by default, open in Safari. This means that your apps pages suddenly jump into Safari. I found this [Gist](https://gist.github.com/irae/1042167), by [Iraê Carvalho](https://github.com/irae) that fixes this problem. Add this script into your `<head>`:
+
+    <script type="text/javascript">
+    	(function(document,navigator,standalone) {
+			// prevents links from apps from oppening in mobile safari
+			// this javascript must be the first script in your <head>
+			if ((standalone in navigator) && navigator[standalone]) {
+				var curnode, location=document.location, stop=/^(a|html)$/i;
+				document.addEventListener('click', function(e) {
+					curnode=e.target;
+					while (!(stop).test(curnode.nodeName)) {
+						curnode=curnode.parentNode;
+					}
+					// Condidions to do this only on links to your own app
+					// if you want all links, use if('href' in curnode) instead.
+					if(
+						'href' in curnode && // is a link
+						(chref=curnode.href).replace(location.href,'').indexOf('#') && // is not an anchor
+						(	!(/^[a-z\+\.\-]+:/i).test(chref) ||                       // either does not have a proper scheme (relative links)
+							chref.indexOf(location.protocol+'//'+location.host)===0 ) // or is in the same protocol and domain
+					) {
+						e.preventDefault();
+						location.href = curnode.href;
+					}
+				},false);
+			}
+		})(document,window.navigator,'standalone');
+	</script>
+
 ##Footnote
 If you're reading this, I hope I have helped and if you have any questions you can find me on [Twitter](http://twitter.com/andrewhathaway). Thanks.
