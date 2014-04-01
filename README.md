@@ -8,7 +8,7 @@ Here we need to setup a few things for your application. The App Viewport (The o
 A little more on the iPhone 5 viewport tag: Using width-device-width strangely makes the app height the size of a 4S and lower, it also prevents splash screens from viewing at their correct, iPhone 5, height. Below is the iPhone 5 freiendly viewport tag. 
 
     <!-- Viewport (iPhone 5 friendly) -->
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0; user-scalable=no">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <!-- Status bar styles -->
     <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
